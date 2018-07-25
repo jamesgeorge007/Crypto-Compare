@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import fetch from 'isomorphic-unfetch';
-import { Line } from 'react-chartjs-2';
+import { Line, Bar, Doughnut, Pie, HorizontalBar } from 'react-chartjs-2';
 import './App.css';
 
 const options = {
@@ -25,7 +25,7 @@ const options = {
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {coinData: this.getCoinData()};
+    this.state = {coinData: this.getCoinData(), chart: 'Line'};
     this.getCoinData = this.getCoinData.bind(this);
   }
   getCoinData = () => {
@@ -74,10 +74,30 @@ class App extends Component {
     }
     
   }
+
   render() {
+    let comparisonChart;
+    if(this.state.chart === 'Line'){
+       comparisonChart = <Line data={this.state.coinData} redraw options={options} width={600} height={250} />;
+    } else if(this.state.chart === 'Bar'){
+       comparisonChart = <Bar data={this.state.coinData} redraw options={options} width={600} height={250} />;
+    } else if (this.state.chart === 'Horizontal-Bar') {
+      comparisonChart = <HorizontalBar data={this.state.coinData} redraw options={options} width={600} height={250} />;
+    } else if (this.state.chart === 'Doughnut') {
+      comparisonChart = <Doughnut data={this.state.coinData} redraw options={options} width={600} height={250} />;
+    } else if (this.state.chart === 'Pie') {
+      comparisonChart = <Pie data={this.state.coinData} redraw options={options} width={600} height={250} />;
+    }
     return (
       <div>
-        <Line data={this.state.coinData} options={options} width={600} height={250} />
+        {comparisonChart} 
+        <select onChange={e => this.setState({chart: e.target.value})}>
+          <option value="Line">Line-Chart</option>
+          <option value="Bar">Bar-Chart</option>
+          <option value="Horizontal-Bar">Horizontal-Bar-Chart</option>
+          <option value="Doughnut">Doughnut</option>
+          <option value="Pie">Pie</option>
+        </select>
       </div>
     );
   }
