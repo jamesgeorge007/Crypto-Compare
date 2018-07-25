@@ -62,12 +62,12 @@ class App extends Component {
       datasets: [
         {
           label: 'Dataset',
-          fillColor: 'rgba(220,220,220,0.2)',
-          strokeColor: 'rgba(220,220,220,1)',
-          pointColor: 'rgba(220,220,220,1)',
-          pointStrokeColor: '#fff',
-          pointHighlightFill: '#fff',
-          pointHighlightStroke: 'rgba(220,220,220,1)',
+          fillColor: '#900',
+          strokeColor: '009',
+          pointColor: '#900',
+          pointStrokeColor: '#000',
+          pointHighlightFill: '#000',
+          pointHighlightStroke: '#090',
           data: coinPrices,
         },
       ]
@@ -90,8 +90,10 @@ class App extends Component {
     }
     return (
       <div>
+        <div style={{padding: 10, borderWidth: 10, borderColor: '#ddd', borderStyle: 'solid'}}>
         {comparisonChart} 
-        <select onChange={e => this.setState({chart: e.target.value})}>
+        </div>
+        <select style={{width: '80vw', margin: '10vh auto', borderColor: '#2e2e2e'}} className="form-control" onChange={e => this.setState({chart: e.target.value})}>
           <option value="Line">Line-Chart</option>
           <option value="Bar">Bar-Chart</option>
           <option value="Horizontal-Bar">Horizontal-Bar-Chart</option>
