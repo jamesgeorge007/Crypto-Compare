@@ -1,3 +1,5 @@
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 <h1 align="center"> Crypto Compare </h1>
 
  Cryptocurrency comparison chart made out in React and Chart-js 2.
