@@ -18,8 +18,6 @@ const options = {
   datasetStroke: true,
   datasetStrokeWidth: 2,
   datasetFill: true,
-  legendTemplate:
-    '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].strokeColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
 };
 
 class App extends Component {
@@ -62,13 +60,27 @@ class App extends Component {
       datasets: [
         {
           label: 'Dataset',
-          fillColor: '#900',
-          strokeColor: '009',
-          pointColor: '#900',
-          pointStrokeColor: '#000',
-          pointHighlightFill: '#000',
-          pointHighlightStroke: '#090',
           data: coinPrices,
+          backgroundColor: [                
+            "#79CAF2",
+            "#80DEEA",
+            "#A5D6A7",
+            "#79CAF2",
+            "#80DEEA",
+            "#A5D6A7",
+            "#C5E1A5",
+            "#FFF59D",
+          ],
+          hoverBackgroundColor: [            
+            "#31B2F2",
+            "#00BCD4",
+            "#4CAF50",
+            "#31B2F2",
+            "#00BCD4",
+            "#4CAF50",
+            "#8BC34A",
+            "#FFEB3B",
+          ]
         },
       ]
     }
@@ -93,7 +105,7 @@ class App extends Component {
         <div style={{padding: 10, borderWidth: 10, borderColor: '#ddd', borderStyle: 'solid'}}>
         {comparisonChart} 
         </div>
-        <select style={{width: '80vw', margin: '10vh auto', borderColor: '#2e2e2e'}} className="form-control" onChange={e => this.setState({chart: e.target.value})}>
+        <select style={{width: '80vw', margin: '10vh auto', borderColor: '#2e2e2e'}} className="form-control" onChange={e => this.setState({coinData: this.getCoinData(), chart: e.target.value})}>
           <option value="Line">Line-Chart</option>
           <option value="Bar">Bar-Chart</option>
           <option value="Horizontal-Bar">Horizontal-Bar-Chart</option>
