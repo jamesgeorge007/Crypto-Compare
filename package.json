@@ -1,6 +1,6 @@
 {
-  "name": "cryptocurrency-compare",
-  "version": "0.1.0",
+  "name": "Cryptocurrency-Compare",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "chart.js": "^2.7.2",
