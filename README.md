@@ -1,3 +1,5 @@
-#  Cryptocurrency Compare
+<h1 align="center"> Crypto Compare </h1>
 
-> Crypto currency comparison chart made with React and Chart.js 2.
+ Cryptocurrency comparison chart made out in React and Chart-js 2.
+ 
+ 
