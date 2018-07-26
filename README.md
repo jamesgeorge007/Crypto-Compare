@@ -26,8 +26,9 @@
  
  - react-chartjs-2 ```npm install react-chartjs-2```
  - chart-js ```npm install chart.js```
+ - isomorphic-unfetch ```npm install isomorphic-unfetch```
  
- ## *Instrucions*
+ ## *Instructions*
 
 - Clone the repo and navigate to the project directory.
 - Run ```npm install``` to install the dependencies.
