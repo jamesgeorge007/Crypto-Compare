@@ -2,7 +2,9 @@
 
 <h1 align="center"> Crypto Compare </h1>
 
- Cryptocurrency comparison chart made out in React and Chart-js 2.
+ - Cryptocurrency comparison chart made out in React and Chart-js 2.
+ - Fetches cryptocurrency prices from the REST Api service provided by *coinmarketcap*.
+ - Did as a sample project while messing around with chart-js and React.
  
  ## *Have a look*
  
