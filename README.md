@@ -2,7 +2,7 @@
 
  Cryptocurrency comparison chart made out in React and Chart-js 2.
  
- ## Have a look
+ ## *Have a look*
  
  ![Line Chart](https://github.com/jamesgeorge007/Crypto-Compare/blob/master/assets/line.png)
  
@@ -14,7 +14,7 @@
  
  ![Pie Chart](https://github.com/jamesgeorge007/Crypto-Compare/blob/master/assets/pie.png)
  
- ## Types of charts
+ ## *Types of charts*
  
  * Line Chart
  * Bar Chart
