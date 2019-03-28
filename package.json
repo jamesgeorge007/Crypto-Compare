@@ -7,7 +7,7 @@
     "isomorphic-unfetch": "^3.0.0",
     "react": "^16.8.5",
     "react-chartjs-2": "^2.7.5",
-    "react-dom": "^16.8.5",
+    "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
   },
   "scripts": {
