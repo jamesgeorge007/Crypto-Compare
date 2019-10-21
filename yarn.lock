@@ -3503,14 +3503,15 @@ eslint-import-resolver-node@^0.3.2:
     debug "^2.6.9"
     resolve "^1.5.0"
 
-eslint-loader@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-3.0.0.tgz#fb70bc2d552a674f43f07f5e6575083e565e790d"
+eslint-loader@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-3.0.2.tgz#5a627316a51d6f41d357b9f6f0554e91506cdd6e"
   dependencies:
+    fs-extra "^8.1.0"
     loader-fs-cache "^1.0.2"
     loader-utils "^1.2.3"
     object-hash "^1.3.1"
-    schema-utils "^2.1.0"
+    schema-utils "^2.2.0"
 
 eslint-module-utils@^2.4.0:
   version "2.4.1"
@@ -4065,6 +4066,14 @@ fs-extra@^4.0.2:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
+fs-extra@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-minipass@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-1.2.5.tgz#06c277218454ec288df77ada54a03b8702aacb9d"
@@ -4248,6 +4257,10 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
 graceful-fs@^4.1.15:
   version "4.1.15"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
+
+graceful-fs@^4.2.0:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.2.tgz#6f0952605d0140c1cfdb138ed005775b92d67b02"
 
 growly@^1.3.0:
   version "1.3.0"
@@ -7535,9 +7548,9 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-app-polyfill@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-app-polyfill/-/react-app-polyfill-1.0.3.tgz#bd7030ebf66569f3aece03e39ab85ca700d8d0f6"
+react-app-polyfill@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-app-polyfill/-/react-app-polyfill-1.0.4.tgz#4dd2636846b585c2d842b1e44e1bc29044345874"
   dependencies:
     core-js "3.2.1"
     object-assign "4.1.1"
@@ -7553,9 +7566,9 @@ react-chartjs-2@^2.8.0:
     lodash "^4.17.4"
     prop-types "^15.5.8"
 
-react-dev-utils@^9.0.4:
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-9.0.4.tgz#5c71a8e8afdec0232c44d4e049d21baa437a92af"
+react-dev-utils@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-9.1.0.tgz#3ad2bb8848a32319d760d0a84c56c14bdaae5e81"
   dependencies:
     "@babel/code-frame" "7.5.5"
     address "1.1.2"
@@ -7576,7 +7589,7 @@ react-dev-utils@^9.0.4:
     loader-utils "1.2.3"
     open "^6.3.0"
     pkg-up "2.0.0"
-    react-error-overlay "^6.0.2"
+    react-error-overlay "^6.0.3"
     recursive-readdir "2.2.2"
     shell-quote "1.7.2"
     sockjs-client "1.4.0"
@@ -7592,9 +7605,9 @@ react-dom@^16.10.2:
     prop-types "^15.6.2"
     scheduler "^0.16.2"
 
-react-error-overlay@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.2.tgz#642bd6157c6a4b6e9ca4a816f7ed30b868c47f81"
+react-error-overlay@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
 
 react-is@^16.8.1:
   version "16.9.0"
@@ -7604,9 +7617,9 @@ react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
 
-react-scripts@3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.1.2.tgz#40b166d380bfd8b425a41dee96e8e725c82bf9e6"
+react-scripts@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.2.0.tgz#58ccd6b4ffa27f1b4d2986cbdcaa916660e9e33c"
   dependencies:
     "@babel/core" "7.6.0"
     "@svgr/webpack" "4.3.2"
@@ -7624,7 +7637,7 @@ react-scripts@3.1.2:
     dotenv-expand "5.1.0"
     eslint "^6.1.0"
     eslint-config-react-app "^5.0.2"
-    eslint-loader "3.0.0"
+    eslint-loader "3.0.2"
     eslint-plugin-flowtype "3.13.0"
     eslint-plugin-import "2.18.2"
     eslint-plugin-jsx-a11y "6.2.3"
@@ -7647,8 +7660,8 @@ react-scripts@3.1.2:
     postcss-normalize "7.0.1"
     postcss-preset-env "6.7.0"
     postcss-safe-parser "4.0.1"
-    react-app-polyfill "^1.0.3"
-    react-dev-utils "^9.0.4"
+    react-app-polyfill "^1.0.4"
+    react-dev-utils "^9.1.0"
     resolve "1.12.0"
     resolve-url-loader "3.1.0"
     sass-loader "7.2.0"
@@ -7657,9 +7670,9 @@ react-scripts@3.1.2:
     terser-webpack-plugin "1.4.1"
     ts-pnp "1.1.4"
     url-loader "2.1.0"
-    webpack "4.40.2"
+    webpack "4.41.0"
     webpack-dev-server "3.2.1"
-    webpack-manifest-plugin "2.0.4"
+    webpack-manifest-plugin "2.1.1"
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.0.7"
@@ -8088,9 +8101,16 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-schema-utils@^2.0.0, schema-utils@^2.0.1, schema-utils@^2.1.0:
+schema-utils@^2.0.0, schema-utils@^2.0.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.2.0.tgz#48a065ce219e0cacf4631473159037b2c1ae82da"
+  dependencies:
+    ajv "^6.10.2"
+    ajv-keywords "^3.4.1"
+
+schema-utils@^2.2.0:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.4.1.tgz#e89ade5d056dc8bcaca377574bb4a9c4e1b8be56"
   dependencies:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
@@ -9197,12 +9217,13 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-manifest-plugin@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/webpack-manifest-plugin/-/webpack-manifest-plugin-2.0.4.tgz#e4ca2999b09557716b8ba4475fb79fab5986f0cd"
+webpack-manifest-plugin@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/webpack-manifest-plugin/-/webpack-manifest-plugin-2.1.1.tgz#6b3e280327815b83152c79f42d0ca13b665773c4"
   dependencies:
     fs-extra "^7.0.0"
     lodash ">=3.5 <5"
+    object.entries "^1.1.0"
     tapable "^1.0.0"
 
 webpack-sources@^1.1.0:
@@ -9219,9 +9240,9 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.40.2:
-  version "4.40.2"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.40.2.tgz#d21433d250f900bf0facbabe8f50d585b2dc30a7"
+webpack@4.41.0:
+  version "4.41.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.0.tgz#db6a254bde671769f7c14e90a1a55e73602fc70b"
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
