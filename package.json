@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "chart.js": "^2.9.2",
+    "chart.js": "^2.9.3",
     "isomorphic-unfetch": "^3.0.0",
     "react": "^16.12.0",
     "react-chartjs-2": "^2.8.0",
